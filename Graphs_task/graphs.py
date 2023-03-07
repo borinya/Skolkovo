@@ -41,6 +41,7 @@ class Graph(object):
         if vertex not in self._graph_dict:
             self._graph_dict[vertex] = []
 
+
     def add_edge(self, edge):
         """ assumes that edge is of type set, tuple or list; 
             between two vertices can be multiple edges! 
@@ -49,7 +50,7 @@ class Graph(object):
         vertex1, vertex2 = tuple(edge)
         for x, y in [(vertex1, vertex2), (vertex2, vertex1)]:
             if x in self._graph_dict:
-                self._graph_dict[x].append(y)
+                self._graph_dict[x].add(y)
             else:
                 self._graph_dict[x] = [y]
 
@@ -122,7 +123,6 @@ class Graph(object):
                 for p in extended_paths: 
                     paths.append(p)
         return paths
-#We check in the following the way of working of our find_path and find_all_paths methods.
     
     def find_isolated_vertices(self):
         """ returns a list of isolated vertices. """
@@ -135,8 +135,8 @@ class Graph(object):
         return isolated
     
     
-    def generate_graph_dict(list_verice): # через range сделать для чиселок
-        generated_dict = {i: set(random.sample([j for j in list_verice if i != j], random.randrange(1, len(list_verice) - 1))) # замена 1->0 генерирует изолированные вершины
+    def generate_graph_dict(list_verice): 
+        generated_dict = {i: set(random.sample([j for j in list_verice if i != j], random.randrange(0, len(list_verice) - 1)))
         for i in list_verice}
         #self._graph_dict = generated_dict
         return Graph(generated_dict)
