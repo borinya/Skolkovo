@@ -147,7 +147,3 @@ class Graph(object):
         nx.draw_networkx(G,  with_labels = True)
 
 
-g = (Graph.generate_graph_dict(['A','B','C','D','E','F','G','H']))
-g.draw_graph()
-plt.show()
-print(g._graph_dict)
