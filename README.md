@@ -1,7 +1,7 @@
 # Skolkovo
 в папке DDPM клонирован репозиторий из условия задания, адаптирована модель для датасета Flowers102
-код в [ноутбуке](https://github.com/borinya/Skolkovo/blob/main/DDPM/train_flowers102.ipynb)
-примеры сгенерированных цветов в [папке](https://github.com/borinya/Skolkovo/tree/main/DDPM/contents )
+код в [ноутбуке](https://github.com/borinya/Skolkovo/blob/main/DDPM/train_flowers102.ipynb).
+Примеры сгенерированных цветов в [папке](https://github.com/borinya/Skolkovo/tree/main/DDPM/contents )
 
 в папке Graphs_task [модуль с классом](https://github.com/borinya/Skolkovo/blob/main/Graphs_task/graphs.py), 
 [ноутбук с использованием класса графа](https://github.com/borinya/Skolkovo/blob/main/Graphs_task/Graphs.ipynb)
